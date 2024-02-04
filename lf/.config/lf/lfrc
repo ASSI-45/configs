@@ -1,0 +1,15 @@
+# Basic commands
+set hidden true
+set ignorecase true
+set icons true
+
+
+
+
+
+
+# movement between diff folders
+map gC cd ~/code
+map gA cd ~/designs/
+map gD cd ~/Downloads
+
