@@ -39,6 +39,11 @@ lvim.plugins = {
 
 -- Scripts -------------
 
+
+-- Markdown
+require("lvim.lsp.manager").setup("marksman")
+
+
 -- python
 
 lvim.builtin.dap.active = true
