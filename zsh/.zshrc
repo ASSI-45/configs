@@ -151,6 +151,12 @@ bmlist() {
     sed 's/alias \(.*\)=.cd "\(.*\)".$/\1\t\2/' "$BMFILE" | sort
 }
 
+
+# reload kitty term
+kitty-reload() {
+    kill -SIGUSR1 $(pidof kitty)
+}
+
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
 
