@@ -62,7 +62,6 @@ path=(~/bin $path)
 export GPG_TTY=$TTY
 export EDITOR="lvim"
 
-
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
 
@@ -103,12 +102,12 @@ alias lla="lisd -l -a"
 # utillity
 alias fman="compgen -c | fzf | xargs man"
 
-
 alias christmas="bash ~/code/ChristBASHTree/tree-EN.sh"
 
 alias 8ball="python3 ~/code/python/8ballGame/game.py"
 
-#
+
+# Scripts
 # This is a bookmark script, i got of stackoverflow
 
 BMFILE=~/.bash.bookmarks
@@ -150,7 +149,6 @@ bmdel() {
 bmlist() {
     sed 's/alias \(.*\)=.cd "\(.*\)".$/\1\t\2/' "$BMFILE" | sort
 }
-
 
 # reload kitty term
 kitty-reload() {
