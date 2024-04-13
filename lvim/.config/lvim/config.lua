@@ -18,6 +18,12 @@ lvim.plugins = {
   { "tribela/vim-transparent"},
   { "iamcco/markdown-preview.nvim" },
   {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+  },
+  {
     "stevearc/dressing.nvim",
     config = function()
       require("dressing").setup({
