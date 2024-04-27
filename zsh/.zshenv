@@ -208,3 +208,4 @@ ex=:\
 *.nix=:\
 "
 
+. "$HOME/.cargo/env"

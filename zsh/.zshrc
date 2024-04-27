@@ -106,6 +106,8 @@ alias christmas="bash ~/code/ChristBASHTree/tree-EN.sh"
 
 alias 8ball="python3 ~/code/python/8ballGame/game.py"
 
+# python
+alias pl="pip list"
 
 # Scripts
 # This is a bookmark script, i got of stackoverflow

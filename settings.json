@@ -1,19 +1,18 @@
 {
-    editor.fontSize: 16,
-    workbench.sideBar.location: right,
-    window.menuBarVisibility: toggle,
-    workbench.colorTheme: Non-Binary Pride Dark,
-    workbench.iconTheme: vscode-great-icons,
-    extensions.experimental.affinity: {
-        asvetliakov.vscode-neovim: 1
+    "editor.fontSize": 16,
+    "workbench.sideBar.location": "right",
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Non-Binary Pride Dark",
+    "workbench.iconTheme": "vscode-great-icons",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
     },
-    editor.fontFamily: Droid Sans Mono, monospace, FiraCode Nerd Font,
-    editor.fontLigatures: true,
-    files.autoSave: afterDelay,
-    editor.cursorBlinking: phase,
-    window.titleBarStyle: custom,
-    files.autoSaveDelay: 500,
-    workbench.startupEditor: none
+    "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "editor.cursorBlinking": "phase",
+    "window.titleBarStyle": "custom",
+    "files.autoSaveDelay": 500,
+    "workbench.startupEditor": "none"
     
 }
-
