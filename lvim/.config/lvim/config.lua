@@ -8,9 +8,9 @@
 lvim.keys.normal_mode["\\"] = ":vsplit<CR>"
 lvim.keys.normal_mode["-"] = ":split<CR>"
 lvim.keys.normal_mode["F9"] = ":"
--- Themes ---------------
+-- Theme and vis ---------------
 lvim.colorscheme = "lunar"
-
+vim.opt.relativenumber = true
 
 -- Plugins --------------
 lvim.plugins = {
