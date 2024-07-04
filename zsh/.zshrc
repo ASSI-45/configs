@@ -104,8 +104,6 @@ alias fman="compgen -c | fzf | xargs man"
 
 alias christmas="bash ~/code/ChristBASHTree/tree-EN.sh"
 
-alias 8ball="python3 ~/code/python/8ballGame/game.py"
-
 # python
 alias pl="pip list"
 
@@ -163,19 +161,4 @@ alias ls="${aliases[ls]:-ls} -A"
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/wlen/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/wlen/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/wlen/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/wlen/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
