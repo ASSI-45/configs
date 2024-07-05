@@ -14,7 +14,7 @@ zstyle ':z4h:' auto-update-days '28'
 zstyle ':z4h:bindkey' keyboard  'pc'
 
 # Don't start tmux.
-zstyle ':z4h:' start-tmux       'enabled'
+zstyle ':z4h:' start-tmux       no
 
 # Mark up shell's output with semantic information.
 zstyle ':z4h:' term-shell-integration 'yes'
@@ -35,10 +35,7 @@ zstyle ':z4h:direnv:success' notify 'yes'
 # SSH when connecting to these hosts.
 zstyle ':z4h:ssh:example-hostname1'   enable 'yes'
 zstyle ':z4h:ssh:*.example-hostname2' enable 'no'
-# The default value if none of the overrides above match the hostname.
-zstyle ':z4h:ssh:*'                   enable 'no'
-
-# Send these files over to the remote host when connecting over SSH to the
+# The default value if none of the overrides above match the hostname. zstyle ':z4h:ssh:*'                   enable 'no' Send these files over to the remote host when connecting over SSH to the
 # enabled hosts.
 zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
 
@@ -60,9 +57,10 @@ path=(~/bin $path)
 
 # Export environment variables.
 export GPG_TTY=$TTY
-export EDITOR="lvim"
+export VISUAL="nvim"
+export VISUAL="nvim"
 
-# Source additional local files if they exist.
+
 z4h source ~/.env.zsh
 
 # Use additional Git repositories pulled in with `z4h install`.
@@ -94,15 +92,16 @@ compdef _directories md
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
 # Define aliases.
-alias tree="tree -a -I .git"
+alias tree='tree -a -I .git'
+
 alias ll="lsd"
 alias l="lsd -l --blocks=git,permission,user,name"
 alias la="lsd -a"
 alias lla="lisd -l -a"
+
 # utillity
 alias fman="compgen -c | fzf | xargs man"
 
-alias christmas="bash ~/code/ChristBASHTree/tree-EN.sh"
 
 # python
 alias pl="pip list"
@@ -155,10 +154,10 @@ kitty-reload() {
     kill -SIGUSR1 $(pidof kitty)
 }
 
+
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
-

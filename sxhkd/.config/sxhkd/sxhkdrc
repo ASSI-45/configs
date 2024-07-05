@@ -10,8 +10,12 @@ super + f
 	firefox
 
 # program launcher
-super + d
+super + r
 	dmenu_run
+
+# rofi
+super + d
+    rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
