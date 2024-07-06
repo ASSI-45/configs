@@ -97,7 +97,7 @@ alias tree='tree -a -I .git'
 alias ll="lsd"
 alias l="lsd -l --blocks=git,permission,user,name"
 alias la="lsd -a"
-alias lla="lisd -l -a"
+alias lla="lsd -l -a"
 
 # utillity
 alias fman="compgen -c | fzf | xargs man"
