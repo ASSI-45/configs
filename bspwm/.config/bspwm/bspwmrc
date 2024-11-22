@@ -17,6 +17,12 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+# COLOR SCHEME
+bspc config normal_border_color "#484848"
+bspc config focused_border_color "#1F8999"
+bspc config urgent_border_color "#B58900"
+bspc config presel_border_color "#26E2FF"
+
 # AUTO START PROGRAMS
 picom --config $HOME/.config/picom/picom.conf &
 feh --bg-scale ~/Pictures/anime-cyberpunk.jpg &
