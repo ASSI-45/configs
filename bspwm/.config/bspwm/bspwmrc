@@ -25,5 +25,6 @@ bspc config presel_border_color "#26E2FF"
 
 # AUTO START PROGRAMS
 picom --config $HOME/.config/picom/picom.conf &
-feh --bg-scale ~/Pictures/anime-cyberpunk.jpg &
-exec ~/.config/polybar/launch.sh
+feh --bg-scale ~/Pictures/wallpaper.jpg &
+exec ~/.config/polybar/launch.sh &
+dunst
