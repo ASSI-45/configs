@@ -135,6 +135,10 @@ super + {Left,Down,Up,Right}
 super + alt + p
   ~/.config/rofi/powermenu.sh
 
+# lock screen
+super + alt + l
+  xsecurelock
+
 # screen brightness
 XF86MonBrightnessDown
   brightnessctl set 5%-
@@ -143,8 +147,19 @@ XF86MonBrightnessUp
   brightnessctl set 5%+
 
 # Volume
-XF86Audio{Raise,Lower}Volume
-  amixer -D pulse sset Master {5%+,5%-}
+# Volume up
+XF86AudioRaiseVolume
+    amixer -q set Master 5%+ unmute
 
+# Volume down
+XF86AudioLowerVolume
+    amixer -q set Master 5%- unmute
+
+# Mute toggle
 XF86AudioMute
-  amixer -D pulse set Master 1+ toggle 
+    amixer -q set Master toggle
+
+# (Optional) Mute microphone toggle
+XF86AudioMicMute
+    amixer -q set Capture toggle
+

@@ -18,7 +18,7 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        i3lock || betterlockscreen -l || swaylock
+        xsecurelock
         ;;
     $suspend)
         systemctl suspend
