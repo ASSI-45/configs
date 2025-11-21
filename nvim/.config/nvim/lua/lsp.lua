@@ -1,9 +1,2 @@
-vim.lsp.config('ruff', {
-  init_options = {
-    settings = {
-      -- Ruff language server settings go here
-    }
-  }
-})
-
-vim.lsp.enable('ruff')
+-- Here is the intry point for lsp's
+-- But there defined in the lsp folder
