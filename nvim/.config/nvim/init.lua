@@ -9,6 +9,7 @@ vim.opt.shiftwidth = 2
 vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.colorcolumn = "80"
 
 -- NVIM-TREE
 -- disable netrw at the very start of your init.lua

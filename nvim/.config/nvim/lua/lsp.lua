@@ -1,2 +1,3 @@
--- Here is the intry point for lsp's
--- But there defined in the lsp folder
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("ansiblels")
+
