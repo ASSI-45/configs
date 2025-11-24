@@ -1,5 +1,9 @@
 return {
-  {'nvim-mini/mini.nvim',},
+  {
+    'nvim-mini/mini.nvim',
+    -- version = "*",
+    -- require("mini.nvim").setup()
+  },
   {
     "echasnovski/mini.pairs",
     version = "*",
@@ -8,6 +12,5 @@ return {
       require("mini.pairs").setup()
     end,
   },
-
 }
 
