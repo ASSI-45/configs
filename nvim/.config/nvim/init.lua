@@ -5,12 +5,16 @@ require("config.lazy")
 require("keybinds")
 require("lsp")
 
+-- setings
 vim.opt.shiftwidth = 2
 vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
+vim.opt.list = true
+vim.opt.listchars:append({ space = "·" })
+
 
 -- NVIM-TREE
 -- disable netrw at the very start of your init.lua
