@@ -1,2 +1,5 @@
-* setup navic maybe with winbar
-* get indent-blankline back workig
+# TODO
+
+- [ ] get indent-blankline back workig <- maybe not
+- [ ] get winbar installed and working
+- [ ] get the weird lsp error away

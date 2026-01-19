@@ -14,6 +14,7 @@ vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.list = true
 vim.opt.listchars:append({ space = "·" })
+vim.opt.expandtab = true
 
 
 -- NVIM-TREE
@@ -26,4 +27,5 @@ vim.opt.termguicolors = true
 
 -- empty setup using defaults
 require("nvim-tree").setup()
+-- require('winbar').setup()
 
