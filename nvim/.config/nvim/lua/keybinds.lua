@@ -44,5 +44,11 @@ vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 
+-- lsp
+vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action({ apply = true}) end, { desc = 'quick fix'})
+vim.keymap.set("n", "<leader>cd", function() vim.lsp.buf.definition() end, { desc = 'go to definition' })
+vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({ async = true }) end, { desc = "Format File" })
+
 -- lsp show error with space-e
 -- vim.api.nvim_buf_set_option('n', '<leader>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>' { noremap=true, silent=true })
+
