@@ -6,6 +6,10 @@ vim.lsp.enable("basedpyright")
 vim.lsp.enable("clangd")
 -- vim.lsp.enable("arduino_language_server")
 vim.lsp.enable("bashls")
+vim.lsp.enable('gopls')
+vim.lsp.enable('svelte')
+vim.lsp.enable('omnisharp')
+vim.lsp.enable('biome')
 
 -- avr programming
 require("lspconfig").clangd.setup{
